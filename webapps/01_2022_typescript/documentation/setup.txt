@@ -1,0 +1,4 @@
+1. setup the local database : docker-compose up --build -d postgres 
+2. copy the api data in the database: psql "postgres://postgres@127.0.0.1:5432/dev" < database/data.sql
+3. run the backend: cd backend && npm start
+4. run the frontend : cd frontend && npm start
